@@ -436,14 +436,11 @@ a {
 
 .cart-button {
     position: fixed;
-    right: 1.5rem;
-    bottom: 1.5rem;
+     bottom: 32px;
+    right: 40px;
 
     width: 60px;
     height: 60px;
-
-    display: grid;
-    place-items: center;
 
     border: none;
     border-radius: 50%;
