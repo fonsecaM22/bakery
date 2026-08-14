@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Freshly baked pastries, artisan coffee, cakes, and breakfast favorites at Sunrise Bakery & Coffee."
+    >
+
+    <meta
+        name="keywords"
+        content="bakery, coffee shop, pastries, cakes, espresso, fresh bread"
+    >
+
+    <meta name="author" content="Sunrise Bakery & Coffee">
+
+    <title>Sunrise Bakery & Coffee | Fresh Pastries & Artisan Coffee</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header class="site-header">
+        <nav class="navbar container" >
+
+            <a class="logo" href="#">
+                ☕ Sunrise
+            </a>
+
+            <button class="nav-toggle"> ☰ </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#menu">Menu</a>
+                </li>
+
+                <li>
+                    <a href="#locations">Locations</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Cart -->
+<button
+    class="cart-button"
+    id="cart-button"
+    type="button"
+    aria-label="Open shopping cart"
+    aria-controls="cart-panel"
+    aria-expanded="false"
+>
+    🛒
+    <span class="cart-count" id="cart-count">0</span>
+</button>
+    </header>
+
+
+    <main id="main-content">
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content container">
+
+                <div class="hero-text">
+                    <p class="eyebrow">Fresh every morning</p>
+
+                    <h1>
+                        Good mornings start with
+                        <span>great coffee.</span>
+                    </h1>
+
+                    <p>
+                        Freshly baked pastries, handcrafted coffee,
+                        and delicious treats made with love.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a class="button button-primary" href="#menu">
+                            View Our Menu
+                        </a>
+
+                        <a class="button button-secondary" href="#contact">
+                            Visit Us
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-card" aria-label="Featured bakery item">
+                    <div class="coffee-icon" aria-hidden="true">☕</div>
+
+                    <h2>Today's Favorite</h2>
+
+                    <p>Warm cinnamon roll + fresh latte</p>
+
+                    <strong>$8.95</strong>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container about-grid">
+
+                <div>
+                    <p class="eyebrow">Our story</p>
+
+                    <h2>Baked with love, served with a smile.</h2>
+                </div>
+
+                <div>
+                    <p>
+                        Sunrise Bakery & Coffee started with a simple idea:
+                        create a cozy neighborhood spot where everyone
+                        could enjoy fresh pastries and really good coffee.
+                    </p>
+
+                    <p>
+                        Every morning, our bakers prepare fresh breads,
+                        croissants, muffins, cookies, and cakes using
+                        quality ingredients.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Menu -->
+        <section class="section menu-section" id="menu">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">Our menu</p>
+
+                    <h2>Something delicious for everyone</h2>
+
+                    <p>
+                        Grab your favorite coffee and pair it with
+                        something freshly baked.
+                    </p>
+                </div>
+
+
+                <!-- Menu filters -->
+                <div class="menu-filters" role="group" aria-label="Filter menu">
+
+                    <button
+                        class="filter-button active"
+                        type="button"
+                        data-filter="all"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        type="button"
+                        data-filter="coffee"
+                    >
+                        Coffee
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        type="button"
+                        data-filter="bakery"
+                    >
+                        Bakery
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        type="button"
+                        data-filter="dessert"
+                    >
+                        Desserts
+                    </button>
+
+                </div>
+
+
+                <!-- Menu items -->
+                <div class="menu-grid">
+
+                    <article class="menu-card" data-category="coffee">
+                        <div class="menu-icon" aria-hidden="true">☕</div>
+
+                        <div>
+                            <h3>Classic Latte</h3>
+
+                            <p>
+                                Smooth espresso with steamed milk.
+                            </p>
+
+                            <strong>$4.50</strong>
+                        </div>
+
+                        <button
+                            class="order-button"
+                            type="button"
+                            data-item="Classic Latte"
+                            data-price="4.50"
+                        >
+                            Add
+                        </button>
+                    </article>
+
+
+                    <article class="menu-card" data-category="coffee">
+                        <div class="menu-icon" aria-hidden="true">🧊</div>
+
+                        <div>
+                            <h3>Iced Mocha</h3>
+
+                            <p>
+                                Espresso, chocolate, milk, and ice.
+                            </p>
+
+                            <strong>$5.25</strong>
+                        </div>
+
+                        <button
+                            class="order-button"
+                            type="button"
+                            data-item="Iced Mocha"
+                            data-price="5.25"
+                        >
+                            Add
+                        </button>
+                    </article>
+
+
+                    <article class="menu-card" data-category="bakery">
+                        <div class="menu-icon">🥐</div>
+
+                        <div>
+                            <h3>Butter Croissant</h3>
+
+                            <p>
+                                Flaky, buttery, and baked fresh daily.
+                            </p>
+
+                            <strong>$3.75</strong>
+                        </div>
+
+                        <button
+                            class="order-button"
+                            type="button"
+                            data-item="Butter Croissant"
+                            data-price="3.75"
+                        >
+                            Add
+                        </button>
+                    </article>
+
+
+                    <article class="menu-card" data-category="bakery">
+                        <div class="menu-icon" aria-hidden="true">🧁</div>
+
+                        <div>
+                            <h3>Blueberry Muffin</h3>
+
+                            <p>
+                                Soft vanilla muffin packed with blueberries.
+                            </p>
+
+                            <strong>$3.50</strong>
+                        </div>
+
+                        <button
+                            class="order-button"
+                            type="button"
+                            data-item="Blueberry Muffin"
+                            data-price="3.50"
+                        >
+                            Add
+                        </button>
+                    </article>
+
+
+                    <article class="menu-card" data-category="dessert">
+                        <div class="menu-icon" aria-hidden="true">🍪</div>
+
+                        <div>
+                            <h3>Chocolate Chip Cookie</h3>
+
+                            <p>
+                                Crispy edges with a soft chocolate center.
+                            </p>
+
+                            <strong>$2.75</strong>
+                        </div>
+
+                        <button
+                            class="order-button"
+                            type="button"
+                            data-item="Chocolate Chip Cookie"
+                            data-price="2.75"
+                        >
+                            Add
+                        </button>
+                    </article>
+
+
+                    <article class="menu-card" data-category="dessert">
+                        <div class="menu-icon" aria-hidden="true">🍰</div>
+
+                        <div>
+                            <h3>Strawberry Cake</h3>
+
+                            <p>
+                                Vanilla cake, strawberries, and cream.
+                            </p>
+
+                            <strong>$6.50</strong>
+                        </div>
+
+                        <button
+                            class="order-button"
+                            type="button"
+                            data-item="Strawberry Cake"
+                            data-price="6.50"
+                        >
+                            Add
+                        </button>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Featured section -->
+        <section class="featured section">
+            <div class="container featured-grid">
+
+                <div class="featured-content">
+                    <p class="eyebrow">Fresh from the oven</p>
+
+                    <h2>Our cinnamon rolls are worth waking up for.</h2>
+
+                    <p>
+                        Soft, warm dough, cinnamon sugar, and our
+                        signature cream cheese glaze.
+                    </p>
+
+                    <a class="button button-primary" href="#menu">
+                        See the Menu
+                    </a>
+                </div>
+
+                <div class="featured-product" aria-label="Cinnamon roll">
+                    <span aria-hidden="true"></span>
+                    <p>Fresh Cinnamon Roll</p>
+                </div>
+
+            </div>
+        </section>
+
+
+       <!-- Mobile Locations -->
+<section class="section locations-section" id="locations">
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">Find us around town</p>
+
+            <h2>Where we'll be this week</h2>
+
+            <p>
+                Our mobile bakery and coffee truck moves around the city.
+                Stop by for fresh pastries and your favorite coffee.
+            </p>
+        </div>
+
+        <div class="locations-grid">
+
+            <article class="location-card">
+                <div class="location-day">
+                    <span>MON</span>
+                    <strong>18</strong>
+                </div>
+
+                <div class="location-info">
+                    <h3>Downtown Market</h3>
+
+                    <p>📍 Bayfront Park</p>
+
+                    <time datetime="2026-08-18T07:00">
+                        7:00 AM – 12:00 PM
+                    </time>
+                </div>
+
+                <a
+                    href="#contact"
+                    class="location-button"
+                    aria-label="Get directions to Downtown Market"
+                >
+                    Visit Us
+                </a>
+            </article>
+
+
+            <article class="location-card">
+                <div class="location-day">
+                    <span>TUE</span>
+                    <strong>19</strong>
+                </div>
+
+                <div class="location-info">
+                    <h3>Beach Morning</h3>
+
+                    <p>📍 South Beach</p>
+
+                    <time datetime="2026-08-19T07:00">
+                        7:00 AM – 1:00 PM
+                    </time>
+                </div>
+
+                <a
+                    href="#contact"
+                    class="location-button"
+                    aria-label="Get directions to South Beach"
+                >
+                    Visit Us
+                </a>
+            </article>
+
+
+            <article class="location-card">
+                <div class="location-day">
+                    <span>WED</span>
+                    <strong>20</strong>
+                </div>
+
+                <div class="location-info">
+                    <h3>Brickell Morning</h3>
+
+                    <p>📍 Brickell City Centre</p>
+
+                    <time datetime="2026-08-20T07:00">
+                        7:00 AM – 12:30 PM
+                    </time>
+                </div>
+
+                <a
+                    href="#contact"
+                    class="location-button"
+                    aria-label="Get directions to Brickell City Centre"
+                >
+                    Visit Us
+                </a>
+            </article>
+
+
+            <article class="location-card">
+                <div class="location-day">
+                    <span>THU</span>
+                    <strong>21</strong>
+                </div>
+
+                <div class="location-info">
+                    <h3>Coconut Grove</h3>
+
+                    <p>📍 CocoWalk</p>
+
+                    <time datetime="2026-08-21T08:00">
+                        8:00 AM – 1:00 PM
+                    </time>
+                </div>
+
+                <a
+                    href="#contact"
+                    class="location-button"
+                    aria-label="Get directions to Coconut Grove"
+                >
+                    Visit Us
+                </a>
+            </article>
+
+
+            <article class="location-card">
+                <div class="location-day">
+                    <span>FRI</span>
+                    <strong>22</strong>
+                </div>
+
+                <div class="location-info">
+                    <h3>Wynwood</h3>
+
+                    <p>📍 Wynwood Marketplace</p>
+
+                    <time datetime="2026-08-22T08:00">
+                        8:00 AM – 2:00 PM
+                    </time>
+                </div>
+
+                <a
+                    href="#contact"
+                    class="location-button"
+                    aria-label="Get directions to Wynwood Marketplace"
+                >
+                    Visit Us
+                </a>
+            </article>
+
+
+            <article class="location-card">
+                <div class="location-day">
+                    <span>SAT</span>
+                    <strong>23</strong>
+                </div>
+
+                <div class="location-info">
+                    <span class="location-badge">
+                        POPULAR STOP
+                    </span>
+
+                    <h3>Farmers Market</h3>
+
+                    <p>📍 Coral Gables</p>
+
+                    <time datetime="2026-08-23T08:00">
+                        8:00 AM – 3:00 PM
+                    </time>
+                </div>
+
+                <a
+                    href="#contact"
+                    class="location-button"
+                    aria-label="Get directions to Coral Gables Farmers Market"
+                >
+                    Visit Us
+                </a>
+            </article>
+
+        </div>
+
+    </div>
+</section>>
+
+
+        <!-- Contact -->
+        <section class="section contact-section" id="contact">
+            <div class="container contact-grid">
+
+                <div>
+                    <p class="eyebrow">Get in touch</p>
+
+                    <h2>Come say hello.</h2>
+
+                    <p>
+                        Have a question about our menu or want to
+                        plan a special event? We'd love to hear from you.
+                    </p>
+                </div>
+
+
+                <address class="contact-card">
+
+                    <div>
+                        <strong>📍 Address</strong>
+
+                        <p>
+                            123 Sunrise Avenue<br>
+                            Miami, FL 33101
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>📞 Phone</strong>
+
+                        <p>
+                            <a href="tel:+13055551234">
+                                (305) 555-1234
+                            </a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>✉️ Email</strong>
+
+                        <p>
+                            <a href="mailto:hello@sunrisebakery.com">
+                                hello@sunrisebakery.com
+                            </a>
+                        </p>
+                    </div>
+
+                </address>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Sunrise Bakery & Coffee.
+                All rights reserved.
+            </p>
+
+            <a href="#main-content">Back to top ↑</a>
+
+        </div>
+    </footer>
+
+<!-- Cart Panel -->
+<aside
+    class="cart-panel"
+    id="cart-panel"
+    aria-label="Shopping cart"
+    aria-hidden="true"
+>
+    <div class="cart-header">
+        <div>
+            <p class="eyebrow">Your order</p>
+            <h2>Your Cart</h2>
+        </div>
+
+        <button
+            class="cart-close"
+            id="cart-close"
+            type="button"
+            aria-label="Close shopping cart"
+        >
+            ×
+        </button>
+    </div>
+
+    <div
+        class="cart-items"
+        id="cart-items"
+    >
+        <p class="empty-cart">
+            Your cart is empty.
+        </p>
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Total</span>
+            <strong id="cart-total">$0.00</strong>
+        </div>
+
+        <button
+            class="checkout-button"
+            id="checkout-button"
+            type="button"
+        >
+            Checkout
+        </button>
+    </div>
+</aside>
+
+<div
+    class="cart-overlay"
+    id="cart-overlay"
+    aria-hidden="true"
+></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
