@@ -436,8 +436,9 @@ a {
 
 .cart-button {
     position: fixed;
-     bottom: calc(24px + env(safe-area-inset-bottom));
-    right: calc(20px + env(safe-area-inset-right));
+    bottom: 32px;
+    right: 40px;
+    z-index: 100;
 
     width: 60px;
     height: 60px;
@@ -1002,10 +1003,6 @@ a {
         padding: 5rem 0;
     }
 
-     .cart-button {
-        bottom: calc(20px + env(safe-area-inset-bottom));
-        right: calc(20px + env(safe-area-inset-right));
-    }
 
     .hero-content,
     .about-grid,
@@ -1076,10 +1073,7 @@ a {
         justify-self: start;
     }
 
-     .cart-button {
-        bottom: calc(20px + env(safe-area-inset-bottom));
-        right: calc(20px + env(safe-area-inset-right));
-    }
+    
 
 
     
