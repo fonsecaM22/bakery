@@ -101,27 +101,6 @@ a {
 }
 
 
-/* ========================================
-   ACCESSIBILITY
-======================================== */
-
-.skip-link {
-    position: fixed;
-    left: 1rem;
-    top: -100px;
-
-    padding: 0.75rem 1rem;
-
-    background: var(--dark-brown);
-    color: var(--white);
-
-    z-index: 1000;
-}
-
-.skip-link:focus {
-    top: 1rem;
-}
-
 
 /* ========================================
    HEADER
@@ -205,7 +184,7 @@ a {
     align-items: center;
 }
 
-.hero h1 {
+.main__title{
     max-width: 700px;
 
     font-size: clamp(3rem, 7vw, 5.5rem);
@@ -214,16 +193,14 @@ a {
     margin-bottom: 1.5rem;
 }
 
-.hero h1 span {
+.orange{
     color: var(--orange);
 }
 
-.hero-text > p:not(.eyebrow) {
+.title__description {
     max-width: 550px;
-
     font-size: 1.15rem;
     color: #654e40;
-
     margin-bottom: 2rem;
 }
 
@@ -243,8 +220,7 @@ a {
     font-weight: 800;
 
     transition:
-        transform 0.2s ease,
-        background 0.2s ease;
+        transform 0.2s ease, background 0.2s ease;
 }
 
 .button:hover {
@@ -267,21 +243,15 @@ a {
 
 .hero-card {
     min-height: 350px;
-
     padding: 3rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
     background: var(--white);
     border-radius: 30px;
-
     box-shadow: var(--shadow);
-
     transform: rotate(2deg);
 }
 
@@ -974,6 +944,7 @@ a {
 
     .nav-toggle {
         display: block;
+        color: black;
     }
 
     .nav-menu {
